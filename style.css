@@ -1,0 +1,363 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #1A1A1A;
+  color: #FFFFFF;
+  padding: 1rem 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  background-color: #1A1A1A; /* Match header background */
+}
+
+.logo img {
+  height: 60px; /* Increased from 40px to 60px for header */
+  width: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  flex-grow: 1;
+}
+
+.nav-links a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #F28C38;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.dropbtn:hover {
+  color: #F28C38;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1A1A1A;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #FFFFFF;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #333333;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.cta-button {
+  background-color: #F28C38;
+  color: #FFFFFF;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #D8702A;
+}
+
+.hero {
+  background-color: #F5F5F5;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero .cta-button {
+  margin: 0 0.5rem;
+}
+
+.hero-image img {
+  width: 800px; /* Reference size for consistency */
+  height: 500px; /* Reference size for consistency */
+  max-width: 100%;
+  object-fit: cover;
+  margin-top: 1rem;
+}
+
+.section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.section p {
+  font-size: 1.2rem; /* Match hero description font size */
+  margin-bottom: 1.5rem;
+}
+
+.mission-image img {
+  width: 800px; /* Match hero image size */
+  height: 500px; /* Match hero image size */
+  max-width: 100%;
+  object-fit: cover;
+  margin-top: 1rem;
+}
+
+/* Carousel Styles */
+.carousel-container {
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  min-width: 800px; /* Match image width */
+  height: 500px; /* Match image height */
+  position: relative;
+}
+
+.carousel-slide img {
+  width: 800px; /* Match hero image size */
+  height: 500px; /* Match hero image size */
+  object-fit: cover;
+}
+
+.slide-cta {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  margin: 0;
+}
+
+.carousel-prev, .carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(242, 140, 56, 0.7); /* Semi-transparent orange */
+  color: #FFFFFF;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 10;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+  background-color: rgba(216, 112, 42, 0.7); /* Darker orange on hover */
+}
+
+.cta-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+footer {
+  background-color: #1A1A1A;
+  color: #FFFFFF;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  background-color: #1A1A1A; /* Match footer background */
+}
+
+.footer-logo img {
+  height: 100px; /* Increased from 40px to 100px for footer */
+  width: auto;
+}
+
+.footer-content a {
+  color: #F28C38;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+  color: #D8702A;
+}
+
+.social-links a {
+  margin: 0 0.5rem;
+}
+
+.newsletter-form {
+  margin: 1rem 0;
+}
+
+.newsletter-form input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.newsletter-form button {
+  padding: 0.5rem 1rem;
+  background-color: #F28C38;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #D8702A;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .logo img {
+    margin-bottom: 1rem;
+    height: 50px; /* Adjusted for mobile to avoid overlap */
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .dropdown-content {
+    position: static;
+    display: none;
+    background-color: #333333;
+    width: 100%;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .cta-button {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .carousel-container {
+    width: 100%;
+  }
+  .carousel-slide {
+    min-width: 100%;
+  }
+  .hero-image img,
+  .mission-image img,
+  .carousel-slide img {
+    width: 100%; /* Full width on mobile */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .carousel-prev, .carousel-next {
+    top: 45%;
+    padding: 8px;
+    font-size: 16px;
+  }
+  .cta-group {
+    flex-direction: column;
+  }
+  footer {
+    padding: 1rem;
+  }
+  .footer-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .footer-logo img {
+    height: 80px; /* Adjusted for mobile to fit better */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 2rem 1rem;
+  }
+  .section {
+    padding: 2rem 1rem;
+  }
+  .newsletter-form input {
+    width: 70%;
+  }
+  .newsletter-form button {
+    width: 28%;
+  }
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
